@@ -3,10 +3,12 @@
 
 require __DIR__.'/../src/bootstrap.php';
 
-use Mhosts\Console\Application;
+use Symfony\Component\Console\Application;
 
 error_reporting(-1);
 ini_set('display_errors', 1);
 
 $application = new Application();
+$application->add(new \Mhosts\Command\Hosts\AddCommand());
+$application->add(new \Mhosts\Command\Hosts\RemoveCommand());
 $application->run();
