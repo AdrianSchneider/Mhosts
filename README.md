@@ -1,4 +1,4 @@
 Mhosts
 ======
 
-PHP command line tool to manage AUFS mounts.
+PHP command line tool to to manage hosts & virtual hosts configuration. 
